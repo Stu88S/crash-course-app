@@ -193,7 +193,6 @@ ul {
 
 @media (max-width: 1300px) {
 	.fact {
-		background-color: orangered;
 		flex-direction: column;
 		align-items: flex-end;
 		gap: 12px;
