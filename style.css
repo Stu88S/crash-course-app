@@ -21,6 +21,10 @@ h1 {
 	margin-top: 6px;
 }
 
+.hidden {
+	display: none !important;
+}
+
 .container {
 	max-width: 80%;
 	margin: 0 auto;
