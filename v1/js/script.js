@@ -1,7 +1,7 @@
 "use strict";
 
-import { CATEGORIES, initialFacts } from "./data.js";
-import { api, authorization } from "/api.js";
+import { CATEGORIES, initialFacts } from "/js/data.js";
+import { api, authorization } from "/js/api.js";
 
 const btnShare = document.querySelector(".btn-share");
 const form = document.querySelector(".fact-form");
