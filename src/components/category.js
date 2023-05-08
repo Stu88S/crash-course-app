@@ -1,16 +1,18 @@
-import { CATEGORIES } from "../data";
+import CATEGORIES from "../data.js";
 
-function CategoryFilter() {
+function CategoryFilter({ setCurrentCategory }) {
 	return (
 		<aside>
 			<ul>
 				<li className="category">
-					<button className="btn btn-all">All</button>
+					<button className="btn btn-all" onClick={() => setCurrentCategory("all")}>
+						All
+					</button>
 				</li>
 
 				{CATEGORIES.map(cat => (
 					<li key={cat.name} className="category">
-						<button className="btn btn-category" style={{ backgroundColor: cat.color }}>
+						<button className="btn btn-category" style={{ backgroundColor: cat.color }} onClick={() => setCurrentCategory(cat.name)}>
 							{cat.name}
 						</button>
 					</li>
